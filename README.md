@@ -8,17 +8,17 @@ NativeScript plugin for a custom hidden game inside a pull-to-refresh layout.
 
 ![Demo](./screens/demo.gif)
 
-#### Native Library
+## Native Library
 [Bored Rudolph](https://github.com/FauDroids/Bored-Rudolf)
 
-### Installation
+## Installation
 From your command prompt/termial go to your app's root folder and execute:
 
 `tns plugin add nativescript-bored-rudolph`
 
 ## Usage
 
-### XML
+## XML
 ```XML
 <page 
   xmlns="http://schemas.nativescript.org/tns.xsd" 
@@ -36,7 +36,7 @@ From your command prompt/termial go to your app's root folder and execute:
 </page>
 ```
 
-### TS
+## TS
 ```TS
 
   public stopRefresh(args: any) {
