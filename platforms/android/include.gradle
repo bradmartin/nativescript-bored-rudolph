@@ -1,0 +1,10 @@
+android {
+    productFlavors {
+        "nativescriptboredrudolph" {
+            dimension "nativescriptboredrudolph"
+        }
+    }
+}
+dependencies {
+    compile 'org.faudroids.boredrudolf:boredrudolf:0.2.0'
+}

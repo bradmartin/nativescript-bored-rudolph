@@ -1,0 +1,15 @@
+<page 
+  xmlns="http://schemas.nativescript.org/tns.xsd" 
+  xmlns:BR="nativescript-bored-rudolph" loaded="pageLoaded">
+  <ActionBar title="Bored Rudolph" backgroundColor="#BF4066" color="#fff" />
+  <stack-layout>
+    <BR:BoredRudolph refresh="{{ stopRefresh }}" id="rudolph">
+      <!--<Button text="End Refreshing" tap="{{ stopRefresh }}" visibility="{{ isRefreshing ? 'visible' : 'collapsed' }}" />-->
+      <list-view items="{{ users }}">
+        <list-view.itemTemplate>
+          <label text="{{ name }}" row="0" col="1" textWrap="true" class="message" />
+        </list-view.itemTemplate>
+      </list-view>
+    </BR:BoredRudolph>
+  </stack-layout>
+</page>
