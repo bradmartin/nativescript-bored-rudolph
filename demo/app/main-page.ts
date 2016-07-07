@@ -9,7 +9,7 @@ import * as platformModule from "platform";
 // Event handler for Page "loaded" event attached in main-page.xml
 export function pageLoaded(args: EventData) {
     // Get the event sender
-    var page = <Page>args.object;
+    let page = <Page>args.object;
 
     let boredRudolph = <BoredRudolph>page.getViewById('rudolph');
 

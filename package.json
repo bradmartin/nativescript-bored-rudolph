@@ -1,7 +1,7 @@
 {
 	"name": "nativescript-bored-rudolph",
 	"version": "1.0.0",
-	"description": "Your awesome NativeScript plugin.",
+	"description": "NativeScript plugin for a custom hidden Rudolph game inside a pull-to-refresh layout.",
 	"main": "boredrudolph.js",
 	"typings": "boredrudolph.d.ts",
 	"nativescript": {
@@ -26,6 +26,9 @@
 		"Android",
 		"bradmartin",
 		"thorum",
+		"Christmas",
+		"Rudolph",
+		"Bored Rudolph",
 		"pull refresh",
 		"TypeScript"
 	],

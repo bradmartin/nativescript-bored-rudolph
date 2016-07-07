@@ -25,8 +25,7 @@ From your command prompt/termial go to your app's root folder and execute:
   xmlns:BR="nativescript-bored-rudolph" loaded="pageLoaded">
   <ActionBar title="Bored Rudolph" backgroundColor="#BF4066" color="#fff" />
   <stack-layout>
-    <BR:BoredRudolph refresh="{{ refreshList }}" id="rudolph">
-      <Button text="End Refreshing" tap="{{ stopRefresh }}" visibility="{{ isRefreshing ? 'visible' : 'collapsed' }}" />
+    <BR:BoredRudolph refresh="{{ stopRefresh }}" id="rudolph">
       <list-view items="{{ users }}">
         <list-view.itemTemplate>
           <label text="{{ name }}" row="0" col="1" textWrap="true" class="message" />
@@ -41,6 +40,7 @@ From your command prompt/termial go to your app's root folder and execute:
 ```TS
 
   public stopRefresh(args: any) {
+    // Load more data here and then set 'refreshing = false' to end the refresh
     let boredRudolph: BoredRudolph = args.object;
     boredRudolph.refreshing = false;
   }
